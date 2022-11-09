@@ -32,7 +32,7 @@ header {
     padding: 0 80px;
     height: 80px;
     box-shadow: 0 0 30px rgb(0 0 0 / 20%);
-    background-color: #FFF;
+    background-color: #000;
     transition: all .5s ease-out;
 }
 
@@ -58,7 +58,7 @@ header {
 
 .header-container ul li a {
     text-decoration: none;
-    color: #000;
+    color: #FFF;
     font-weight: normal;
     transition: all 0.3s;
     font-size: 17px;
