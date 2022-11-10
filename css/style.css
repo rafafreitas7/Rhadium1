@@ -27,6 +27,11 @@ body {
     min-height: 100vh;
 }
 
+::selection {
+    background-color: #FFF7B6;
+    color: #000;
+}
+
 /* HEADER */
 header {
     padding: 0 80px;
@@ -157,26 +162,106 @@ main img {
     color: rgba(0, 0, 0, 0.1);
 }
 
-.footer-wrapper {
-    height: 450px;
-    background-color: gray;
+/* FOOTER */
+
+footer {
+    background: #000;
 }
 
-.copy {
-    background-color: #161E2D;
-    height: 60px;
+.footer-container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 
-.footer-wrapper p {
-    color: black;
-    font-weight: bold;
+.footer-pages {
+    padding: 56px 0;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+    color: #FFF;
+    margin-bottom: 12px;
+}
+
+.footer-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-list a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #FFF;
+}
+
+.footer-item a:hover {
+    text-decoration: underline;
+}
+
+.footer-item i {
+    font-size: 30px;
+    color: #FFF;
+}
+
+.footer-list span {
+    color: rgb(247, 78, 17);
+    font-size: 15px;
+}
+
+.footer-list-social {
+    display: flex;
+    text-decoration: none;
+    font-size: 14px;
+    color: #FFF;
+    list-style: none;
+    gap: 12px;
+}
+
+.footer-list-social a {
+    color: #FFF;
+    transition: all 0.3s;
+}
+
+.footer-list-social i:hover {
+    color: rgb(247, 78, 17);
+}
+
+.footer-list span a:hover {
+    text-decoration: none;
+}
+
+.phone-number {
+    font-size: 16px;
+    color: #FFF;
+    margin-top: -25px;
+    margin-bottom: 20px;
+}
+
+.phone-number a {
+    font-size: 18px;
+}
+
+.phone-number a:hover {
+    text-decoration: underline;
+}
+
+.footer-copy {
+    background: #000;
+}
+
+.footer-copy p {
+    color: rgba(255, 255, 255, 0.582);
     text-align: center;
-    font-size: 35px;
 }
 
-.copy p {
-    color: white;
-    text-align: center;
-    align-items: center;
-    font-size: 35px;
-}
+/* FIM FOOTER */
