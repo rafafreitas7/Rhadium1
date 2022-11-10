@@ -162,6 +162,25 @@ main img {
     color: rgba(0, 0, 0, 0.1);
 }
 
+.product-left .imgL {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+}
+
+.product-left .imgL img {
+    max-width: 90%;
+    transition: 0.5s;
+}
+
+.product-left:hover .imgL img {
+    max-width: 50%;
+}
+
 /* FOOTER */
 
 footer {
