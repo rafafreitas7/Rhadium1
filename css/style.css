@@ -155,7 +155,7 @@ main {
     font-weight: 300;
 }
 
-.product .product-card .poput-btn {
+.product .product-card .popup-btn {
     z-index: 2;
     color: #FFF;
     background: #555;
@@ -170,6 +170,11 @@ main {
     padding: 10px 15px;
     border-radius: 20px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.product .product-card .popup-btn:hover {
+    background-color: rgba(85, 85, 85, 0.637);
 }
 
 /* POPUP VIEW*/
@@ -185,6 +190,13 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.product .popup-view.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 .product .popup-card {
@@ -236,6 +248,11 @@ main {
     font-size: 20px;
     margin: 20px;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+.product .popup-card .close-btn:hover {
+    color: #ff0000;
 }
 
 .product .popup-card .info h2 {
@@ -272,6 +289,11 @@ main {
     margin: 10px auto;
     padding: 10px 50px;
     border-radius: 20px;
+    transition: 0.3s;
+}
+
+.product .popup-card .info .add-cart-btn:hover {
+    background-color: #009ed2bb;
 }
 
 .product .popup-card .info .add-wish {
@@ -284,7 +306,7 @@ main {
 
 /* Responsive popup view */
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .product .popup-card {
         flex-direction: column;
         width: 550px;
@@ -303,13 +325,48 @@ main {
 
     .product .popup-card .product-img img {
         left: initial;
-        max-width: 100%; 
+        max-width: 53%; 
     }
 
     .product .popup-card .info {
         width: 100%;
         height: auto;
         padding: 20px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .product .popup-card .info h2 {
+        margin: 20px 5px 5px 5px;
+        font-size: 25px;
+    }
+
+    .product .popup-card .info h2 span {
+        font-size: 10px;
+    }
+
+    .product .popup-card .info p {
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    .product .popup-card .info .price {
+        margin: 5px;
+        font-size: 30px;
+    }
+
+    .product .popup-card .info .add-cart-btn {
+        margin: 5px auto;
+        padding: 5px 40px;
+        font-size: 14px;
+    } 
+
+    .product .popup-card .info .add-wish {
+        font-size: 14px;
+    }
+
+    .product .popup-card .close-btn {
+        z-index: 4;
     }
 }
 
